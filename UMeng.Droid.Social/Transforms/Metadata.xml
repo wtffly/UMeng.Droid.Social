@@ -1,0 +1,26 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <attr path="/api/package[@name='com.umeng.socialize.utils']/class[@name='Log']/field[@name='LOG']" name="name">Logs</attr>
+  <attr path="/api/package[@name='com.umeng.socialize']/interface[@name='UMAuthListener']/method[@name='onCancel']" name="argsType">OnCancelEventArgs</attr>
+  <attr path="/api/package[@name='com.umeng.socialize']/interface[@name='UMAuthListener']/method[@name='onError']" name="argsType">OnErrorEventArgs</attr>
+  <attr path="/api/package[@name='com.umeng.socialize']/interface[@name='UMAuthListener']/method[@name='onComplete']" name="argsType">OnCompleteEventArgs</attr>
+  <attr path="/api/package[@name='com.umeng.socialize.net.base']/class[@name='SocializeRequest.RequestMethod']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.umeng.socialize.net.base']/class[@name='SocializeRequest.FILE_TYPE']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.umeng.socialize.utils']/class[@name='ResUtil.FetchTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.Object...']]" name="name">DoInBackgrounds</attr>
+  <attr path="/api/package[@name='com.tencent.mm.sdk.modelbase']/class[@name='BaseResp']/field[@name='errCode']" name="name">ErrCodes</attr>
+  <attr path="/api/package[@name='com.tencent.mm.sdk.modelmsg']/class[@name='WXMediaMessage']/field[@name='mediaObject']" name="name">MediaObjects</attr>
+  <attr path="/api/package[@name='com.tencent.weibo.sdk.android.api.util']/class[@name='FirendCompare']/method[@name='compare']/parameter[@name='p0']" name="type">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.tencent.weibo.sdk.android.api.util']/class[@name='FirendCompare']/method[@name='compare']/parameter[@name='p1']" name="type">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.sina.weibo.sdk.register.mobile']/class[@name='Country']/method[@name='compareTo']/parameter[@name='p0']" name="type">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.sina.weibo.sdk.component']/class[@name='BrowserRequestParamBase']/method[@name='onCreateRequestParamBundle']" name="visibility">public</attr>
+
+  <!--<attr path="/api/package[@name='com.sina.weibo.sdk.api.share']/interface[@name='VersionCheckHandler']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.sina.weibo.sdk.component']/class[@name='BrowserRequestParamBase']/field[@name='mLaucher']" name="visibility">public</attr>-->
+</metadata>
