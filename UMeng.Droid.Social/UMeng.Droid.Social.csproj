@@ -36,6 +36,11 @@
     <Reference Include="Mono.Android" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Additions\ResUtil.cs" />
@@ -48,8 +53,8 @@
     <EmbeddedNativeLibrary Include="Jars\libs\armeabi-v7a\libweibosdkcore.so" />
     <EmbeddedNativeLibrary Include="Jars\libs\mips\libweibosdkcore.so" />
     <EmbeddedNativeLibrary Include="Jars\libs\mips64\libweibosdkcore.so" />
-    <EmbeddedNativeLibrary Include="Jars\libs\x86\libweibosdkcore.so" />
     <EmbeddedNativeLibrary Include="Jars\libs\x86_64\libweibosdkcore.so" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
@@ -75,19 +80,19 @@
     <EmbeddedJar Include="Jars\SocialSDK_tencentWB_3.jar" />
   </ItemGroup>
   <ItemGroup>
-    <InputJar Include="Jars\SocialSDK_QQZone_3.jar" />
+    <EmbeddedJar Include="Jars\SocialSDK_QQZone_3.jar" />
   </ItemGroup>
   <ItemGroup>
-    <ReferenceJar Include="Jars\mta-sdk-1.6.2.jar" />
+    <EmbeddedReferenceJar Include="Jars\mta-sdk-1.6.2.jar" />
   </ItemGroup>
   <ItemGroup>
-    <ReferenceJar Include="Jars\open_sdk_r5509.jar" />
+    <EmbeddedReferenceJar Include="Jars\open_sdk_r5509.jar" />
   </ItemGroup>
   <ItemGroup>
-    <InputJar Include="Jars\SocialSDK_Sina.jar" />
+    <EmbeddedJar Include="Jars\SocialSDK_Sina.jar" />
   </ItemGroup>
   <ItemGroup>
-    <InputJar Include="Jars\weiboSDKCore_3.1.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\weiboSDKCore_3.1.4.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
