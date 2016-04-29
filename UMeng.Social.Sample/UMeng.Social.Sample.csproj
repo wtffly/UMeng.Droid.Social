@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{01E8A48F-DC5D-454F-AB8D-90FE10E8FF3D}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UMeng.Social.Sample</RootNamespace>
+    <AssemblyName>UMeng.Social.Sample</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChineseAreaService, Version=1.0.5924.29023, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ChineseAreaService.1.0.5924.29023\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\ChineseAreaService.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Sino.Droid.ExpandEditText, Version=1.0.5955.37594, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sino.Droid.ExpandEditText.1.0.1\lib\MonoAndroid60\Sino.Droid.ExpandEditText.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sino.Droid.ExpandTab, Version=1.0.5960.19070, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sino.Droid.ExpandTab.1.0.6\lib\MonoAndroid60\Sino.Droid.ExpandTab.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sino.Droid.MaterialDialog, Version=1.0.5963.17840, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sino.Droid.MaterialDialog.1.0.9\lib\MonoAndroid60\Sino.Droid.MaterialDialog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Vector.Drawable, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WBShareActivity.cs" />
+    <Compile Include="wxapi\WXEntryActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GettingStarted.Xamarin" />
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\umeng_socialize_fade_in.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\umeng_socialize_fade_out.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\umeng_socialize_shareboard_animation_in.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\umeng_socialize_shareboard_animation_out.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\umeng_socialize_slide_in_from_bottom.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\umeng_socialize_slide_out_from_bottom.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\gradient.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\sina_web_default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_action_back.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_action_back_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_action_back_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_at_button.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_at_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_at_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_bind_bg.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_button_blue.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_button_grey.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_button_grey_blue.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_button_login.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_button_login_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_button_login_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_button_red.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_button_red_blue.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_button_white.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_button_white_blue.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_default_avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_douban_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_douban_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_fetch_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_follow_check.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_follow_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_follow_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_light_bar_bg.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_location_ic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_location_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_location_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_nav_bar_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_oauth_check.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_oauth_check_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_oauth_check_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_qq_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_qq_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_qzone_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_qzone_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_refersh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_renren_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_renren_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_search_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_shape_solid_black.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_shape_solid_grey.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_share_music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_share_pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_share_to_button.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_share_transparent_corner.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_share_video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_shareboard_item_background.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_sidebar_normal.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_sidebar_selected.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_sidebar_selector.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_sina_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_sina_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_title_back_bt.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_title_back_bt_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_title_back_bt_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_title_right_bt.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_title_right_bt_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_title_right_bt_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_title_tab_button_left.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_title_tab_button_right.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_title_tab_left_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_title_tab_left_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_title_tab_right_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_title_tab_right_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_tx_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_tx_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_wechat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_wechat_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_window_shadow_pad.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_wxcircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_wxcircle_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\umeng_socialize_x_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\umeng_socialize_light_bar_bg_pad.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\umeng_socialize_nav_bar_bg_pad.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\umeng_socialize_oauth_check_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\umeng_socialize_oauth_check_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\umeng_socialize_base_alert_dialog.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\umeng_socialize_base_alert_dialog_button.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\umeng_socialize_failed_load_page.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\umeng_socialize_full_alert_dialog.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\umeng_socialize_full_alert_dialog_item.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\umeng_socialize_full_curtain.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\umeng_socialize_oauth_dialog.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\umeng_socialize_post_share.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\umeng_socialize_shareboard_item.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\umeng_socialize_simple_spinner_item.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\umeng_socialize_titile_bar.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\umeng_socialize_colors.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\umeng_socialize_strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\umeng_socialize_style.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout-sw550dp-large\umeng_socialize_full_alert_dialog.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout-sw550dp-large\umeng_socialize_oauth_dialog.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout-sw550dp-large\umeng_socialize_post_share.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout-sw550dp-large\umeng_socialize_titile_bar.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UMeng.Droid.Social\UMeng.Droid.Social.csproj">
+      <Project>{f59f2f44-c8ba-4880-9e45-1cf102f8b756}</Project>
+      <Name>UMeng.Droid.Social</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+		<Target Name="BeforeBuild">
+		</Target>
+		<Target Name="AfterBuild">
+		</Target>
+ -->
+</Project>

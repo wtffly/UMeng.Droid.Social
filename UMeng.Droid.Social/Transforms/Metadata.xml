@@ -1,13 +1,26 @@
 <metadata>
-	<attr path="/api/package[@name='com.umeng.socialize']/interface[@name='UMAuthListener']/method[@name='onCancel']" name="argsType">OnCancelEventArgs</attr>
-	<attr path="/api/package[@name='com.umeng.socialize']/interface[@name='UMAuthListener']/method[@name='onError']" name="argsType">OnErrorEventArgs</attr>
-	<attr path="/api/package[@name='com.umeng.socialize']/interface[@name='UMAuthListener']/method[@name='onComplete']" name="argsType">OnCompleteEventArgs</attr>
-	<attr path="/api/package[@name='com.umeng.socialize.net.base']/class[@name='SocializeRequest.RequestMethod']" name="visibility">public</attr>
-	<attr path="/api/package[@name='com.umeng.socialize.utils']/class[@name='Log']/field[@name='LOG']" name="name">Logs</attr>
-	<attr path="/api/package[@name='com.umeng.socialize.net.base']/class[@name='SocializeRequest.FILE_TYPE']" name="visibility">public</attr>
-	<attr path="/api/package[@name='com.umeng.socialize.utils']/class[@name='ResUtil.FetchTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.Object...']]" name="name">DoInBackgrounds</attr>
-	<attr path="/api/package[@name='com.tencent.weibo.sdk.android.api.util']/class[@name='FirendCompare']/method[@name='compare']/parameter[@name='p0']" name="type">Java.Lang.Object</attr>
-	<attr path="/api/package[@name='com.tencent.weibo.sdk.android.api.util']/class[@name='FirendCompare']/method[@name='compare']/parameter[@name='p1']" name="type">Java.Lang.Object</attr>
-	<attr path="/api/package[@name='com.tencent.mm.sdk.modelbase']/class[@name='BaseResp']/field[@name='errCode']" name="name">ErrCodes</attr>
-	<attr path="/api/package[@name='com.tencent.mm.sdk.modelmsg']/class[@name='WXMediaMessage']/field[@name='mediaObject']" name="name">MediaObjects</attr>
+  <attr path="/api/package[@name='com.umeng.socialize']/interface[@name='UMAuthListener']/method[@name='onCancel']" name="argsType">OnCancelEventArgs</attr>
+
+  <attr path="/api/package[@name='com.umeng.socialize']/interface[@name='UMAuthListener']/method[@name='onError']" name="argsType">OnErrorEventArgs</attr>
+
+  <attr path="/api/package[@name='com.umeng.socialize']/interface[@name='UMAuthListener']/method[@name='onComplete']" name="argsType">OnCompleteEventArgs</attr>
+
+  <attr path="/api/package[@name='com.umeng.socialize.net.base']/class[@name='SocializeRequest.RequestMethod']" name="visibility">public</attr>
+
+  <attr path="/api/package[@name='com.umeng.socialize.utils']/class[@name='Log']/field[@name='LOG']" name="name">Logs</attr>
+
+  <attr path="/api/package[@name='com.umeng.socialize.net.base']/class[@name='SocializeRequest.FILE_TYPE']" name="visibility">public</attr>
+
+  <attr path="/api/package[@name='com.umeng.socialize.utils']/class[@name='ResUtil.FetchTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.Object...']]" name="name">DoInBackgrounds</attr>
+
+  <attr path="/api/package[@name='com.tencent.weibo.sdk.android.api.util']/class[@name='FirendCompare']/method[@name='compare']/parameter[@name='p0']" name="type">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.tencent.weibo.sdk.android.api.util']/class[@name='FirendCompare']/method[@name='compare']/parameter[@name='p1']" name="type">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.tencent.mm.sdk.modelbase']/class[@name='BaseResp']/field[@name='errCode']" name="name">ErrCodes</attr>
+
+  <attr path="/api/package[@name='com.tencent.mm.sdk.modelmsg']/class[@name='WXMediaMessage']/field[@name='mediaObject']" name="name">MediaObjects</attr>
+
+  <remove-node path="/api/package[@name='com.umeng.socialize.handler']/interface[@name='UMTencentSSOHandler.ObtainAppIdListener']" />
+
 </metadata>
